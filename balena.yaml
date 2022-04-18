@@ -7,11 +7,11 @@ assets:
   repository:
     type: blob.asset
     data:
-      url: 'https://github.com/cristidragomir97/ros-io'
+      url: 'https://github.com/zoobot/ros-io'
   logo:
     type: blob.asset
     data:
-      url: 'https://github.com/cristidragomir97/ros-io/raw/main/assets/logo.png'
+      url: 'https://github.com/zoobot/ros-io/raw/main/assets/logo.png'
 data:
   defaultDeviceType: raspberrypi3
   supportedDeviceTypes:

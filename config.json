@@ -1,0 +1,36 @@
+{
+    "name": "ep1-rc-car", 
+    "desc": "kitchen sink included",
+
+    "downloads":{
+        "repos":[
+            ["https://github.com/zoobot/robot-block-lib", "./library/core-lib"]
+        ],
+        "install_deps": "True"
+    },
+
+    "parts": {
+        "motor_driver": {   
+                "role": "subscriber",
+                "topic": "/cmd_vel",
+                "folder": "/motozero",
+                "library": "motozero",
+                "args":{
+                    "pins": {
+                        "motor1a": 24, 
+                        "motor1b": 27,
+                        "motor1_enable": 5,
+                        "motor2a": 17, 
+                        "motor2b": 6,
+                        "motor2_enable": 22,
+                        "motor3a": 12, 
+                        "motor3b": 23,
+                        "motor3_enable": 16,
+                        "motor4a": 25, 
+                        "motor4b": 13,
+                        "motor4_enable": 18
+                    }
+                }
+        }
+    }
+}
