@@ -15,7 +15,6 @@
                 "topic": "/cmd_vel",
                 "folder": "/motozero",
                 "library": "motozero",
-                "address": "0x76", 
                 "args":{
                     "pins": {
                         "motor1a": 24, 
