@@ -1,0 +1,21 @@
+version: '2.1'
+
+volumes:
+    ros-bin: 
+    opencv-lib: 
+    opencv-include: 
+    usr-lib:
+
+services:
+  ros-io:
+    privileged: true
+    image: zoobot/ros-io
+    environment: 
+        - UDEV=1
+        - ROS_HOSTNAME=ros-io
+        - ROS_MASTER_URI=https://347aba3bd2d859f629697927fc4909e5.balena-devices.com:11311
+        - CONFIG_REPO=https://github.com/zoobot/zerobot
+    volumes:
+      - ros-bin:/opt/ros/noetic
+    devices:
+      - "/dev:/dev"
